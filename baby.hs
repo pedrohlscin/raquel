@@ -18,3 +18,5 @@ evenNumber x = if x `mod` 2 == 0
 
 evenNumbers :: Int -> [Int]
 evenNumbers n = [x | x <- take n [0..], even x]
+
+cycling n thing = take n (cycle thing)
